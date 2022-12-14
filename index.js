@@ -62,8 +62,6 @@ Shout out to my instructors and TA's who are make themselves available.
 If you have any questions please feel free to reach out to me by visiting my github page.
 https://github.com/${username}
 
-
-
 `;
 
 inq.prompt([
@@ -100,9 +98,6 @@ inq.prompt([
     }
 ]).then((response) => {
     console.log(response)
-    if (response.license != "None") {
-        badge = "![License Badge](https://shields.io/badge/license-" + response.license + "-green)";
-    }
 
     const readMeStuff = readME(response);
     fs.writeFile('README.md', readMeStuff, (error) =>
